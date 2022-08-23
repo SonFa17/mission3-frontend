@@ -22,7 +22,12 @@ const SearchBar = (props) => {
         }
     }
 
+//     const string = 
 
+//     const newString = () => {
+//         string.replace(/[^\w\s]|_/g, "").replace(/\s+/g, " ");
+//     console.log(newString)
+// }
 
     return (
         <>
