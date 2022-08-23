@@ -5,9 +5,8 @@ import { useState } from "react";
 
 
 const SearchBar = (props) => {
-    const {
-        onSearch
-    } = props;
+    
+    const {onSearch} = props;
 
     const [search, setSearch] = useState("");
 
@@ -17,17 +16,15 @@ const SearchBar = (props) => {
     }
 
     const handleEnterKeyPressed = (e) => {
-        if (e.key === 'Enter') {
             onSearch(search)
         }
-    }
 
-//     const string = 
+    //     const string = search
 
-//     const newString = () => {
-//         string.replace(/[^\w\s]|_/g, "").replace(/\s+/g, " ");
-//     console.log(newString)
-// }
+    //     const newString = () => {
+    //         string.replace(/[^\w\s]|_/g, "").replace(/\s+/g, " ");
+    //     console.log(newString)
+    // }
 
     return (
         <>
@@ -41,10 +38,10 @@ const SearchBar = (props) => {
                         type="text"
                         value={search}
                         onChange={handleInput}
-                        onKeyPress={handleEnterKeyPressed}
+
                     />
 
-                    <button className="search-bar-button"
+                    <button onClick={handleEnterKeyPressed} className="search-bar-button"
                         type="button" >Search</button>
                 </div>
             </div>
