@@ -15,8 +15,7 @@ const Header = () => {
 
   const onSearch = async (text) => {
     const results = await InfoSource.get("/", {
-      params: { s: text, i: "tt3896198", apiKey: "c4332283" },
-      // params: { s: text, i: "process.env.REACT_APP_I", apiKey: "process.env.REACT_APP_apiKey" },
+      params: { s: text, i: process.env.REACT_APP_I, apiKey: process.env.REACT_APP_API_KEY },
     });
 
     setState(prevState => {
