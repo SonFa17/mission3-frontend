@@ -1,0 +1,56 @@
+.search-box {
+  margin-top: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-container {
+  display: flex;
+}
+
+.search-bar-button {
+  height: 6vh;
+  margin-left: 1vw;
+  width: 12vw;
+  border: none;
+  background-color: #0076bd;
+  color: white;
+  cursor: pointer;
+}
+
+.search-bar {
+  margin-bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35vw;
+  height: 5.5vh;
+  text-align: center;
+}
+
+.box {
+  text-align: left;
+  border: black ridge 1px;
+  border-radius: 10px;
+  margin: 3px;
+  width: 20rem;
+  padding: 10px;
+}
+
+.dropdown {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+}
+
+.dropdown:empty {
+  border: none;
+}
+
+.dropdown-row {
+  cursor: pointer;
+  text-align: start;
+  margin: 2px 0;
+}
