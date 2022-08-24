@@ -10,21 +10,21 @@ const SearchBar = (props) => {
 
     const [search, setSearch] = useState("");
 
+
     const handleInput = (e) => {
         const text = e.target.value
         setSearch(text)
     }
 
-    const handleEnterKeyPressed = (e) => {
+
+
+    const handleOnClick = () => {
             onSearch(search)
+            const string = search
+            const newString = string.replace(/[^\w\s]|_/g, " ")
+            console.log(newString)
         }
 
-    //     const string = search
-
-    //     const newString = () => {
-    //         string.replace(/[^\w\s]|_/g, "").replace(/\s+/g, " ");
-    //     console.log(newString)
-    // }
 
     return (
         <>
@@ -38,10 +38,9 @@ const SearchBar = (props) => {
                         type="text"
                         value={search}
                         onChange={handleInput}
-
                     />
 
-                    <button onClick={handleEnterKeyPressed} className="search-bar-button"
+                    <button onClick={handleOnClick} className="search-bar-button"
                         type="button" >Search</button>
                 </div>
             </div>
