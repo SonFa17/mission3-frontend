@@ -24,7 +24,7 @@ const SearchBar = (props) => {
             const string = search
             const newString = string.replace(/[^\w\s]|_/g, " ")
             console.log(newString)
-            // document.write(newString);
+            return newString;
         }
 
 
