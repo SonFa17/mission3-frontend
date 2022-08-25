@@ -9,7 +9,7 @@ const SearchBar = (props) => {
     const {onSearch} = props;
 
     const [search, setSearch] = useState("");
-    // const [updatedString, setUpdatedString] = useState("");
+
 
 
     const handleInput = (e) => {
@@ -24,6 +24,7 @@ const SearchBar = (props) => {
             const string = search
             const newString = string.replace(/[^\w\s]|_/g, " ")
             console.log(newString)
+            setSearch(newString)
             return newString;
         }
 
