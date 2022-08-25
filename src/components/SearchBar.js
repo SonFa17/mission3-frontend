@@ -27,7 +27,7 @@ const SearchBar = (props) => {
     }
   };
   return (
-    <>
+
       <div className="search-box">
         <div className="search-container">
           <input
@@ -48,7 +48,7 @@ const SearchBar = (props) => {
           </button>
         </div>
       </div>
-    </>
+
   );
 };
 
