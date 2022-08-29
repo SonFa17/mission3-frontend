@@ -1,15 +1,26 @@
-import Punctuation from './Punctuation'
+const { trimString } = require("./Punctuation");
 
+test('should trim "hello%world" and return "hello world"', () => {
+  const text = trimString("hello%world");
+  expect(text).toBe("hello world");
+});
 
-    describe('Punctuation removal', () => {
-        it("when hello%world return hello world", () => {
-            const input = "hello%world";
-            const expected = "hello world"
+test('should trim "!hello world" and return "hello world"', () => {
+  const text = trimString("!hello world");
+  expect(text).toBe(" hello world");
+});
 
-            const actual = Punctuation(input)
+test('should trim "hello?world" and return "hello world"', () => {
+  const text = trimString("hello?world");
+  expect(text).toBe("hello world");
+});
 
-            expect(actual).toBe(expected);
-        })
-    });
+test('should trim "hello;world" and return "hello world"', () => {
+  const text = trimString("hello;world");
+  expect(text).toBe("hello world");
+});
 
-   
+test('should trim "hello world?" and return "hello world"', () => {
+  const text = trimString("hello world?");
+  expect(text).toBe("hello world ");
+});
