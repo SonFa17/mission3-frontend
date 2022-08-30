@@ -7,6 +7,7 @@ function App() {
     <>
 <NavBar/>
 {/* <Header/> */}
+<div>test</div>
     </>
   );
 }
