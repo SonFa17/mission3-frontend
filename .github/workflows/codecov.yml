@@ -1,6 +1,4 @@
-codecov.yml
-
-name: Codecov
+name: codecov
 on: [push]
 jobs:
   build:
