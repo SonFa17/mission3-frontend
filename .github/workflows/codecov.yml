@@ -7,4 +7,4 @@ jobs:
      - uses: actions/checkout@master
      - uses: codecov/codecov-action@v3.1.0
        with:
-       fail_ci_if_error: true 
+        fail_ci_if_error: true 
