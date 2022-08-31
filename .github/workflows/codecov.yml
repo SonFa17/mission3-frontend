@@ -1,0 +1,13 @@
+codecov.yml
+
+name: Codecov
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: codecov/codecov-action@v3
+      with:
+        files: ./coverage1.xml,./coverage2.xml
+        fail_ci_if_error: true 
